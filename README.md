@@ -257,12 +257,12 @@ https://www.tooplate.com/view/2115-marvel
                 <div class="contact-info-item">
                   <h3 class="mb-3 text-white">Say hello</h3>
                   <p class="footer-text mb-0">-</p>
-                  <p><a href="mailto:hello@company.co">azayusama@gmail.com</a></p>
+                  <p><a href="mailto:azayusama@gmail.com">azayusama@gmail.com</a></p>
                 </div>
 
                 <ul class="social-links">
                      <li><a href="#" class="uil uil-dribbble" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
-                     <li><a href="#" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
+                     <li><a href="https://instagram.com/azyuska_" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
                      <li><a href="#" class="uil uil-youtube" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li>
                 </ul>
             </div>
@@ -272,7 +272,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="" method="get">
+              <form action="kirim.php" method="post">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -305,7 +305,7 @@ https://www.tooplate.com/view/2115-marvel
 
                     <div class="col-lg-12 col-12">                                
                         <p class="copyright-text text-center">Copyright &copy; 2019 Company Name . All rights reserved</p>
-                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="https://www.facebook.com/tooplate">Tooplate</a></p>
+                        <p class="copyright-text text-center">Designed by <a rel="nofollow" href="#">Azay Usama</a></p>
                     </div>
                     
                </div>
