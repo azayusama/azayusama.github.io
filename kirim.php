@@ -4,6 +4,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $pesan = trim($_POST["pesan"]);
 
+      // Validasi data (opsional)
+    if (empty($nama) || empty($email) || empty($pesan)) {
+        header("Location: index.html?error=1"); // Redirect ke halaman sebelumnya dengan pesan error
+        exit();
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: index.html?error=2"); // Redirect dengan pesan error untuk email tidak valid
+        exit();
+    }
 
 
     // Konfigurasi email (sesuaikan dengan detail email Anda)
@@ -22,11 +31,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Kirim email
     if (mail($to, $subject, $message, $headers)) {
-        header("Location: index.html?success=1"); // Redirect ke halaman sebelumnya dengan pesan sukses
+        header("Location: index.html"); // Redirect ke halaman sebelumnya dengan pesan sukses
     } else {
-        header("Location: index.html?error=3"); // Redirect dengan pesan error jika gagal mengirim email
+        header("Location: undraw_software_engineer_lvl5.svg"); // Redirect dengan pesan error jika gagal mengirim email
     }
 } else {
-    header("Location: index.html"); // Redirect ke halaman sebelumnya jika tidak ada data POST
+    header("Location: project-image01.png"); // Redirect ke halaman sebelumnya jika tidak ada data POST
 }
 ?>
