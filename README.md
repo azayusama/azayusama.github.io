@@ -272,7 +272,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Interested to work together? Let's talk</h2>
 
-              <form action="kirim.php" method="get">
+              <form action="kirim.php" method="post">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
