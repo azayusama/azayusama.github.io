@@ -33,9 +33,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $message, $headers)) {
         header("Location: index.html"); // Redirect ke halaman sebelumnya dengan pesan sukses
     } else {
-        header("Location: undraw_software_engineer_lvl5.svg"); // Redirect dengan pesan error jika gagal mengirim email
+        header("Location: index.html"); // Redirect dengan pesan error jika gagal mengirim email
     }
 } else {
-    header("Location: project-image01.png"); // Redirect ke halaman sebelumnya jika tidak ada data POST
+    header("Location: index.html"); // Redirect ke halaman sebelumnya jika tidak ada data POST
 }
 ?>
