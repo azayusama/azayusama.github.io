@@ -4,15 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $pesan = trim($_POST["pesan"]);
 
-    // Validasi data (opsional)
-    if (empty($nama) || empty($email) || empty($pesan)) {
-        header("Location: index.html?error=1"); // Redirect ke halaman sebelumnya dengan pesan error
-        exit();
-    }
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: index.html?error=2"); // Redirect dengan pesan error untuk email tidak valid
-        exit();
-    }
+
 
     // Konfigurasi email (sesuaikan dengan detail email Anda)
     $to = "azayusama@gmail.com"; // Alamat email tujuan
