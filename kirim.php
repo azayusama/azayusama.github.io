@@ -1,29 +1,37 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maaf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Maaf nyasar kesini yaa</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#">Tetap disini</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Ambil data dari formulir
-    $nama = $_POST["nama"];
-    $email = $_POST["email"];
-    $pesan = $_POST["pesan"];
+  <main>
+    <section class="hero">
+      <h2>Mohon maaf ya</h2>
+      <p>Untuk kirim pesan sedang ada gangguan.</p>
+    </section>
 
-    // Konfigurasi email
-    $to = "azayusama@gmail.com"; // Ganti dengan alamat email tujuan Anda
-    $subject = "Pesan dari Formulir";
-    $headers = "From: " . $nama . " <" . $email . ">" . "\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+    <section class="content">
+      <h3>Kamu bisa hubungi aku di</h3>
+      <p>Email : azayusama@gmail.com atau instagram @azyuska_ </p>
+    </section>
+  </main>
 
-    // Isi pesan email
-    $message = "Nama: " . $nama . "\n";
-    $message .= "Email: " . $email . "\n";
-    $message .= "Pesan: " . $pesan . "\n";
-
-    // Kirim email
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Pesan berhasil dikirim!";
-    } else {
-        echo "Gagal mengirim pesan.";
-    }
-}
-
-?>
+  <footer>
+    <p>&copy; 2025 Azay Usama</p>
+  </footer>
+</body>
+</html>
